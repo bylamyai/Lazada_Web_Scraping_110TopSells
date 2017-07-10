@@ -9,7 +9,7 @@ Created on Fri Dec 16 08:05:42 2015
 
 @purpose: WebScraping Excercise
 @         - Extract Lazada Daily Top 110 top sellers
-@input      : http://www.lazada.com.my/highlights-top-sellers/?page=1'	
+@input      : http://www.lazada.co.th/highlights-top-sellers/?page=1'	
 @output     : a tab delimted dataset in txt file of today's 110 top selling items
 """
 
@@ -56,7 +56,7 @@ f.write('day-ranking'
 ############################################################
 
 for x in range(1,5):
-	url = 'http://www.lazada.com.my/highlights-top-sellers/?page='+str(x)	
+	url = 'http://www.lazada.co.th/highlights-top-sellers/?page='+str(x)	
 	page = urlopen(url)
 	bs_page = BeautifulSoup(page,'lxml')
 
